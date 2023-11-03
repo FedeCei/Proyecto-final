@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <link rel="stylesheet"
+        href="Css/styles.css">
+  <link rel="stylesheet"
+        href="Css/services.styles.css">
+  <script async
+          src="Js/script.js"></script>
+  <script async
+          src="Js/services.script.js"></script>
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500&display=swap"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Advent+Pro:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="Assets/Logo.png"
+             alt="Logo">
+      </a>
+    </div>
+    <nav>
+      <div class="burger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text"
+             placeholder="Search...">
+      <button type="submit">Find</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="services">
+      <h2>Our Services</h2>
+      <p>At Hosting Company, we offer a wide range of hosting services to meet your specific needs. Whether you are
+        an individual, a small business, or a large enterprise, we have the right hosting solution for you. Our services
+        are designed to provide reliable, secure, and high-performance hosting for your website.</p>
+    </section>
+
+    <section class="plans">
+      <h2>Our Plans</h2>
+      <div class="plans-container">
+        <div class="plan">
+          <h3>Basic Plan</h3>
+          <ul>
+            <li>10GB Storage Space</li>
+            <li>100GB Bandwidth</li>
+            <li>1 Website</li>
+            <li>24/7 Customer Support</li>
+          </ul>
+          <button class="plan-button">Buy Plan</button>
+        </div>
+        <div class="plan">
+          <h3>Standard Plan</h3>
+          <ul>
+            <li>50GB Storage Space</li>
+            <li>500GB Bandwidth</li>
+            <li>5 Websites</li>
+            <li>Free SSL Certificate</li>
+            <li>24/7 Customer Support</li>
+          </ul>
+          <button class="plan-button">Buy Plan</button>
+        </div>
+        <div class="plan">
+          <h3>Premium Plan</h3>
+          <ul>
+            <li>Unlimited Storage Space</li>
+            <li>Unlimited Bandwidth</li>
+            <li>Unlimited Websites</li>
+            <li>Free Domain Name</li>
+            <li>Free SSL Certificate</li>
+            <li>24/7 Customer Support</li>
+          </ul>
+          <button class="plan-button">Buy Plan</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">
+      <a href="index.html">
+        <img src="Assets/Logo.png"
+             alt="Logo">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <div id="modal"
+       class="modal">
+    <div id="confirm-message"
+         class="modal-content">
+      <div>
+        <span class="close">&times;</span>
+        <h2>Confirm Plan Purchase</h2>
+      </div>
+      <p>Are you sure you want to buy this plan?</p>
+      <div class="modal-buttons">
+        <button class="modal-button yes-button">Yes</button>
+        <button class="modal-button no-button">No</button>
+      </div>
+    </div>
+    <div id="success-message"
+         class="modal-content"
+         style="display: none;">
+      <div>
+        <span class="close">&times;</span>
+        <h2>Confirmation</h2>
+      </div>
+      <p>Purchase was successful!</p>
+      <div class="modal-buttons">
+        <button class="modal-button ok-button">Ok</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

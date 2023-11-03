@@ -1,0 +1,458 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+
+/* Declaration of color variables */
+:root {
+    --primary-color: #3f3843;
+    --primary-color-hover: #544a59;
+    --secondary-color: #3c91e6;
+    --accent-color: #fa7538;
+    --accent-color-hover: #ff8533;
+    --white-color: #fafffd;
+}
+
+/* Buttons, h1, and h2 font styles */
+button,
+button[type='submit'],
+h1,
+h2,
+.section-button,
+.cta-button {
+    font-family: 'Advent Pro', sans-serif;
+}
+
+body {
+    background-color: var(--white-color);
+    font-family: 'Abel', Arial, sans-serif;
+    color: var(--primary-color);
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header styles */
+header {
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 7rem;
+    height: auto;
+    margin-inline: 2rem;
+}
+
+/* Hide the nav menu by default */
+.nav-menu {
+    display: none;
+}
+
+/* Show the nav menu when the burger menu is clicked */
+.show {
+    display: block;
+}
+
+/* Styles for the burger menu */
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--white-color);
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 2rem;
+}
+
+nav ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.search-bar {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.search-bar input[type='text'] {
+    width: 70%;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    background-color: var(--white-color);
+    font-weight: 500;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('../Assets/Hero.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 10vh 7vw;
+    color: var(--white-color);
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.hero p {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--accent-color-hover);
+}
+
+/* Company info section styles */
+.company-info {
+    background-color: var(--white-color);
+    padding: 5vh 7vw;
+    text-align: center;
+}
+
+.company-info h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+}
+
+.company-info p {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+
+.section-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease;
+}
+
+.section-button:hover {
+    background-color: var(--accent-color-hover);
+}
+
+/* Services section styles */
+.services {
+    background-color: var(--secondary-color);
+    padding: 5vh 7vw;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.services h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+}
+
+.services p {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--primary-color);
+    padding: 2rem 2rem;
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .logo img {
+    width: 8rem;
+    height: auto;
+}
+
+footer nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 15%;
+}
+
+footer nav ul li {
+    margin-bottom: 1rem;
+}
+
+footer nav ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-color);
+    padding: 2rem;
+    border-radius: 0.3rem;
+    max-width: 500px;
+    width: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.close:hover {
+    color: var(--primary-color-hover);
+}
+
+.modal h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.modal p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease;
+    margin-right: 1rem;
+}
+
+.modal-button:hover {
+    background-color: var(--accent-color-hover);
+}
+
+/* Show the normal nav menu on larger screens */
+@media screen and (min-width: 769px) {
+    .burger-menu {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+    }
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    /* Tablet styles */
+    .container {
+        padding: 1rem;
+    }
+
+    .logo img {
+        width: 8rem;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul {
+        margin-left: 2rem;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero p {
+        font-size: 1.4rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.6rem;
+    }
+
+    .section-button {
+        font-size: 1.2rem;
+        padding: 0.6rem 1.2rem;
+    }
+
+    .company-info h2,
+    .services h2 {
+        font-size: 2.4rem;
+    }
+
+    .company-info p,
+    .services p {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .logo img {
+        margin-bottom: 0.5rem;
+    }
+
+    footer nav ul {
+        width: 100%;
+        padding: 0;
+    }
+
+    footer nav ul li {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Mobile styles */
+    .container {
+        padding: 0.5rem;
+    }
+
+    .logo img {
+        width: 6rem;
+    }
+
+    nav ul li {
+        margin-right: 0.5rem;
+    }
+
+    .search-bar input[type='text'] {
+        width: 15%;
+    }
+
+    .search-bar button {
+        margin-left: 0.2rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        padding: 0.6rem 1.2rem;
+    }
+
+    .section-button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .company-info h2,
+    .services h2 {
+        font-size: 1.8rem;
+    }
+
+    .company-info p,
+    .services p {
+        font-size: 1rem;
+    }
+}

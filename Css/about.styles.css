@@ -1,0 +1,41 @@
+/* About Us styles */
+.about-us {
+    background-color: var(--white-color);
+    padding: 5vw 7vw;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+}
+
+.about-us p {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    /* Tablet styles */
+
+    .about-us h2 {
+        font-size: 2.4rem;
+    }
+
+    .about-us p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Mobile styles */
+
+    .about-us h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-us p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <link rel="stylesheet"
+        href="Css/styles.css">
+  <link rel="stylesheet"
+        href="Css/contact.styles.css">
+  <script async
+          src="Js/contact.script.js"></script>
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500&display=swap"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Advent+Pro:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="Assets/Logo.png"
+             alt="Logo">
+      </a>
+    </div>
+    <nav>
+      <div class="burger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form id="contactForm">
+      <div class="form-group">
+        <input type="text"
+               id="name"
+               name="name"
+               placeholder="Name"
+               required>
+      </div>
+      <div class="form-group">
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="Email"
+               required>
+      </div>
+      <div class="form-group">
+        <textarea id="message"
+                  name="message"
+                  placeholder="Message"
+                  rows="5"
+                  required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <footer>
+    <div class="logo">
+      <a href="index.html">
+        <img src="Assets/Logo.png"
+             alt="Logo">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <div id="modal"
+       class="modal">
+    <div class="modal-content">
+      <div>
+        <span class="close">&times;</span>
+        <h2>Confirmation</h2>
+      </div>
+      <p>Thank you for contacting us! We will get back to you soon.</p>
+      <div class="modal-buttons">
+        <button class="modal-button ok-button">OK</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

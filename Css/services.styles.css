@@ -1,0 +1,103 @@
+/* Services styles */
+main {
+    padding: 2rem 0;
+}
+
+.services {
+    background-color: var(--white-color);
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.services h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+}
+
+.services p {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+
+.plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 7vw;
+    background-color: var(--secondary-color);
+}
+
+.plans h2 {
+    font-size: 2.5rem;
+    margin-block: 2rem;
+    color: var(--white-color);
+}
+
+.plans-container {
+    display: flex;
+    width: 100%;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    background-color: var(--white-color);
+    padding: 2rem;
+    margin: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.plan h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.plan ul {
+    list-style-type: none;
+    margin-bottom: 2rem;
+}
+
+.plan ul li {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.plan-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease;
+}
+
+.plan-button:hover {
+    background-color: var(--accent-color-hover);
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    /* Tablet styles */
+    .services h2 {
+        font-size: 2rem;
+    }
+
+    .services p {
+        font-size: 1rem;
+    }
+
+    .plans-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Mobile styles */
+}
