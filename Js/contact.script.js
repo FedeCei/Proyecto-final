@@ -1,3 +1,12 @@
+// Toggle burger and nav menu
+const burgerMenu = document.querySelector('.burger-menu');
+const navMenu = document.querySelector('.nav-menu');
+
+burgerMenu.addEventListener('click', () => {
+  // Toggle functionality for nav menu on burger click
+  navMenu.classList.toggle('show');
+});
+
 // Contact form modal functionality
 const form = document.querySelector('form');
 const modal = document.getElementById('modal');
