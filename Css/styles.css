@@ -87,6 +87,7 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
+    font-size: 1.3rem;
 }
 
 nav ul li {
@@ -224,20 +225,54 @@ footer .logo img {
 }
 
 footer nav ul {
-    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-right: 15%;
+    font-size: 1.2rem;
+    margin-inline: 2rem;
 }
 
 footer nav ul li {
-    margin-bottom: 1rem;
+    margin: 0 0 1rem 0;
 }
 
 footer nav ul li a {
     color: var(--white-color);
     text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-inline: 5vw;
+}
+
+.social-icons img {
+    width: 2rem;
+    height: auto;
+    margin-inline: 0.5rem;
+}
+
+.divider {
+    width: 0.2vw;
+    height: 6rem;
+    background-color: var(--white-color);
+    margin: 0 1rem;
+}
+
+.trademark {
+    display: flex;
+    align-items: center;
+    margin: 0 5vw 0 3vw;
+}
+
+.trademark span:first-child {
+    margin-right: 1rem;
+}
+
+.trademark span:last-child {
+    font-size: 0.8rem;
 }
 
 .highlight {
@@ -400,10 +435,28 @@ footer nav ul li a {
     footer nav ul {
         width: 100%;
         padding: 0;
+        margin: 0;
     }
 
     footer nav ul li {
         margin-bottom: 0.5rem;
+    }
+
+    .social-icons {
+        margin: 1rem 0;
+    }
+
+    .social-icons a:first-child,
+    .social-icons a:last-child {
+        margin: 0;
+    }
+
+    .trademark {
+        margin: 0;
+    }
+
+    .divider {
+        display: none;
     }
 }
 
