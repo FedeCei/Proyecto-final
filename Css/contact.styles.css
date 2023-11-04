@@ -102,9 +102,3 @@ footer nav ul li a {
         max-width: 90%;
     }
 }
-
-@media screen and (max-width: 480px) {
-    form {
-        max-width: 90%;
-    }
-}
